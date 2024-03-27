@@ -45,4 +45,12 @@ public abstract class AudioCollection extends LibraryEntry {
     public boolean matchesOwner(final String user) {
         return this.getOwner().equals(user);
     }
+
+    /**
+     * Contains track boolean.
+     *
+     * @param track the track
+     * @return the boolean
+     */
+    public abstract boolean containsTrack(AudioFile track);
 }
