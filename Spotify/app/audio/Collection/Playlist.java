@@ -135,4 +135,9 @@ public final class Playlist extends AudioCollection {
             return count == Integer.parseInt(query);
         }
     }
+
+    @Override
+    public boolean containsTrack(final AudioFile track) {
+        return songs.contains(track);
+    }
 }
